@@ -1,0 +1,10 @@
+# 允许所有爬虫抓取整站
+User-agent: *
+Allow: /
+
+# 简历页面需要被搜到（例如 HR 搜名字）。若不想被索引，
+# 把上面的 Allow 改成 Disallow: / ，并确认 _headers 里的
+# X-Robots-Tag 规则是否也需要同步。
+#
+# 绑定自定义域名后，如需 sitemap，取消下面注释并改域名：
+# Sitemap: https://你的域名/sitemap.xml

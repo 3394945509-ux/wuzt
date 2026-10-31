@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>伍忠天 · 通信工程 · 硬件检测 / 通信检测</title>
+<meta name="description" content="伍忠天的个人简历：通信工程本科在读（2027 届），求职意向为硬件检测类、通信检测类。熟悉 5G 计费核验、光纤链路性能测试与通信局站防雷检测。" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230071e3'/%3E%3Cpath d='M8 11l3.2 10L16 13l4.8 8L24 11' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+
+<!-- 顶部滚动进度 -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- 导航 -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top" aria-label="回到顶部">
+      <span class="brand-dot"></span>
+      <span id="navName">伍忠天</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="页面目录"></nav>
+    <a class="nav-cta" href="#contact">联系我</a>
+    <button class="menu-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false" aria-controls="menuPanel">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- 移动端目录 -->
+<div class="menu-panel" id="menuPanel" aria-hidden="true">
+  <div class="menu-panel-inner" id="menuPanelLinks"></div>
+  <p class="menu-panel-foot">通信工程 · 2027 届 · 求职意向 硬件检测 / 通信检测</p>
+</div>
+
+<main>
+  <!-- ============ 首屏 ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid-veil"></div>
+    </div>
+
+    <div class="wrap hero-inner">
+      <p class="hero-eyebrow hero-anim" style="--delay:.05s">
+        <span class="pulse"></span><span id="heroHeadline">通信工程本科在读 · 2027 届</span>
+      </p>
+
+      <h1 class="hero-name hero-anim" style="--delay:.12s" id="heroName">伍忠天</h1>
+
+      <p class="hero-intent hero-anim" style="--delay:.24s">
+        求职意向 · <span id="heroIntent"></span>
+      </p>
+
+      <p class="hero-intro hero-anim" style="--delay:.32s" id="heroIntro"></p>
+
+      <div class="hero-stats hero-anim" style="--delay:.42s" id="heroStats"></div>
+    </div>
+
+    <a class="scroll-cue hero-anim" href="#basics" style="--delay:.72s" aria-label="向下浏览">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">向下浏览</span>
+    </a>
+  </section>
+
+  <!-- ============ 基本信息 ============ -->
+  <section class="section" id="basics" data-section>
+    <div class="wrap">
+      <div class="sec-head" data-reveal="up"></div>
+      <div class="facts" id="facts"></div>
+      <div class="contact-strip" id="contactStrip" data-reveal="up"></div>
+    </div>
+  </section>
+
+  <!-- ============ 教育背景 ============ -->
+  <section class="section section--alt" id="education" data-section>
+    <div class="wrap">
+      <div class="sec-head" data-reveal="up"></div>
+      <article class="edu-card" id="eduCard" data-reveal="up"></article>
+    </div>
+  </section>
+
+  <!-- ============ 工作经历 ============ -->
+  <section class="section" id="experience" data-section>
+    <div class="wrap">
+      <div class="sec-head" data-reveal="up"></div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ============ 项目经历 ============ -->
+  <section class="section section--alt" id="projects" data-section>
+    <div class="wrap">
+      <div class="sec-head" data-reveal="up"></div>
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 技能特长 ============ -->
+  <section class="section" id="skills" data-section>
+    <div class="wrap">
+      <div class="sec-head" data-reveal="up"></div>
+      <div class="skill-grid" id="skillGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 荣誉奖项 ============ -->
+  <section class="section section--alt" id="honors" data-section>
+    <div class="wrap">
+      <div class="sec-head" data-reveal="up"></div>
+      <div class="honor-grid" id="honorGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 个人优势 ============ -->
+  <section class="section" id="strengths" data-section>
+    <div class="wrap">
+      <div class="sec-head" data-reveal="up"></div>
+      <div class="strength-list" id="strengthList"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap footer-inner">
+    <p class="footer-eyebrow" data-reveal="up">Get in touch</p>
+    <h2 class="footer-title" data-reveal="up">期待与你聊聊<br />检测与运维的那些事。</h2>
+
+    <div class="footer-links" data-reveal="up">
+      <a class="footer-link" id="footMail" href="#">
+        <span class="footer-link-label">邮箱</span>
+        <span class="footer-link-value"></span>
+      </a>
+      <a class="footer-link" id="footTel" href="#">
+        <span class="footer-link-label">电话</span>
+        <span class="footer-link-value"></span>
+      </a>
+      <div class="footer-link">
+        <span class="footer-link-label">所在地</span>
+        <span class="footer-link-value" id="footCity"></span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span id="footCopy"></span>
+      <a class="to-top" href="#top">回到顶部 ↑</a>
+    </div>
+  </div>
+</footer>
+
+<noscript>
+  <div class="noscript">本站内容由数据文件动态渲染，请启用 JavaScript 后浏览。</div>
+</noscript>
+
+<script src="assets/js/resume-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
